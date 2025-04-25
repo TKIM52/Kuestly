@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800 font-sans;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply font-bold px-4 py-2 inline-block transition-colors hover:text-[#00E676];
+  }
+  
+  .table-header {
+    @apply px-3 py-2 text-center border-b border-gray-200;
+  }
+  
+  .table-cell {
+    @apply px-3 py-4 border-b border-gray-200 text-center;
+  }
+}
